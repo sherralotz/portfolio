@@ -22,6 +22,10 @@ li.nav-item {
   font-weight: 500;
   font-size: 18px;
 }
+.logo {
+  height: 30px;
+  margin-top: -5px;
+}
 .firstpanel {
   margin-top: 150px;
 }
