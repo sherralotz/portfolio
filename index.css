@@ -72,6 +72,9 @@ section.section-padding:nth-child(odd) {
   .navbar .container {
     padding: 0 15px;
   }
+}
+
+@media (max-width: 991px) {
   .firstpanel {
     margin-top: -30px;
   }
