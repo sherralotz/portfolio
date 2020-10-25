@@ -11,9 +11,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy":"yarn build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "sherralotz <sherralotz@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/sherralotz/portfolio.git"
 }

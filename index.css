@@ -43,6 +43,9 @@ section.section-padding:nth-child(odd) {
   border-left: 5px solid #e22d2d;
   padding-left: 5px;
 }
+.test {
+  color: white;
+}
 /*----animation----*/
 @keyframes fade-in {
   from {
