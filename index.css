@@ -24,7 +24,7 @@ li.nav-item {
 }
 .logo {
   height: 30px;
-  margin-top: -5px;
+  margin-top: 1px;
 }
 .firstpanel {
   margin-top: 150px;
@@ -94,7 +94,7 @@ section.section-padding:nth-child(odd) {
 .center {
   text-align: center;
   margin: auto;
-  width: 50%;
+  width: 240px;
 }
 
 /*----animation----*/
