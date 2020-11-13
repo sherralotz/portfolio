@@ -35,4 +35,15 @@ $(function(){
   
     init();
     checkPosition();
+<<<<<<< Updated upstream
   })();
+=======
+  })();
+
+  document.querySelector('.toggle').addEventListener('click', function() {
+    $(this).find(".icon").addClass("animateicon");
+    $(this).find(".icon").toggleClass("fa-sun fa-moon"); 
+    $(this).find(".icon").toggleClass("text-white", $(this).find(".icon").hasClass("fa-moon"));  
+    $("body").toggleClass("lightmode darkmode"); 
+});
+>>>>>>> Stashed changes
