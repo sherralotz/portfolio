@@ -1,15 +1,23 @@
 $(function(){
-    $('#animateBtn').click(function(){ 
-      animate('#anim-head', 'rubberBand');
-      return false;
-    }); 
-    // Animate
-    function animate(element, animation){
-      $(element).addClass('animated ' + animation);
-      var wait = setTimeout(function(){
-        $(element).removeClass('animated ' + animation);
-      }, 1000);
-    }
+    // $('#animateBtn').click(function(){ 
+    //   animate('#anim-head', 'rubberBand');
+    //   return false;
+    // }); 
+    // // Animate
+    // function animate(element, animation){
+    //   $(element).addClass('animated ' + animation);
+    //   var wait = setTimeout(function(){
+    //     $(element).removeClass('animated ' + animation);
+    //   }, 1000);
+    // }
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('main-anim'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'data.json'
+    })
   });
   
   
