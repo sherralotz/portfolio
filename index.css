@@ -128,9 +128,9 @@ section.section-padding:nth-child(odd) p {
   margin: auto;
   width: 240px;
 }
-#main-anim {
+/* #main-anim {
   width: 500px;
-}
+} */
 /* ------------ 🌊 wave effect ------------ */
 /* .wave {
   position: absolute;
