@@ -1,6 +1,6 @@
 body {
-  background: #1a1a1a;
-  color: #fff;
+  background: #fff;
+  color: #1a1a1a;
 }
 a {
   text-decoration: none;
@@ -18,7 +18,7 @@ li.nav-item {
   margin: 0 15px;
 }
 .nav-link {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   font-size: 18px;
 }
@@ -35,27 +35,34 @@ li.nav-item {
 .nav-link:hover,
 .accent.active,
 .accent:hover {
-  color: #e22d2d !important;
+  color: #c40b0b !important;
 }
 .accent-bg {
-  background-color: #e22d2d;
+  background-color: #c40b0b;
+  color: white !important;
+  border: none;
 }
 .accent-bg:hover {
-  background-color: #ce1717;
+  background-color: #c40b0b;
 }
 section.section-padding:nth-child(odd) {
-  background: #000000;
+  background: #f8f8fb;
 }
 .sectiontitle {
-  border-left: 5px solid #e22d2d;
+  border-left: 5px solid #c40b0b;
   padding-left: 5px;
 }
+
+/* section.section-padding:nth-child(odd) .sectiontitle,
+section.section-padding:nth-child(odd) p {
+  color: #fff;
+} */
 .navbar-toggler {
   color: white;
 }
-.card {
+/* .card {
   background: #1a1a1a;
-}
+} */
 .card img {
   opacity: 1;
   display: block;
@@ -85,7 +92,7 @@ section.section-padding:nth-child(odd) {
 }
 
 .card .text {
-  background-color: #e22d2d;
+  background-color: #c40b0b;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -95,6 +102,9 @@ section.section-padding:nth-child(odd) {
   text-align: center;
   margin: auto;
   width: 240px;
+}
+#main-anim {
+  width: 600px;
 }
 
 /*----animation----*/
