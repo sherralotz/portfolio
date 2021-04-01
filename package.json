@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000p\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000",
   "main": "index.js",
   "homepage": "https://sherralotz.github.io/portfolio/",
   "dependencies": {
@@ -10,9 +10,18 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "yarn build",
+    "start": "index.js",
+    "deploy": "gh-pages -d build"
   },
   "author": "sherralotz <sherralotz@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/sherralotz/portfolio.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherralotz/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sherralotz/portfolio/issues"
+  }
 }
