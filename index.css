@@ -143,6 +143,9 @@ section.section-padding:nth-child(odd) p {
   right: 30px;
   top: -10px;
 }
+.custom-btn{
+  user-select: none;
+}
 /* ------------ 🌊 wave effect ------------ */
 /* .wave {
   position: absolute;
