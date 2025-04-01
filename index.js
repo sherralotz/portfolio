@@ -38,11 +38,9 @@ $(function () {
 
 document.querySelector(".toggle").addEventListener("click", function () {
   $(this).find(".icon").addClass("animateicon");
-  $(this).find(".icon").toggleClass("fa-sun fa-moon");
-  $(this)
-    .find(".icon")
-    .toggleClass("text-white", $(this).find(".icon").hasClass("fa-moon"));
-  $("body").toggleClass("lightmode darkmode");
+  $(this).find(".icon").toggleClass("fa-moon fa-sun");
+  $(this).find(".icon").toggleClass("text-white", $(this).find(".icon").hasClass("fa-sun"));
+  $("body").toggleClass("darkmode lightmode");
 });
 
 // Select all links with hashes
