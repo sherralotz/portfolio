@@ -18,7 +18,7 @@ const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, back
 
 
     return (
-      <section className={`py-16 transition-colors duration-500 relative ${variantClasses[variant]}`}>  
+      <section className={`py-10 sm:py-16 transition-colors duration-500 relative ${variantClasses[variant]}`}>  
       {/* Dots Background */}
       { background !== "blank" ? 
         <div className={`absolute inset-0 transition-colors duration-500 
@@ -27,7 +27,8 @@ const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, back
         `} />:""}
        
       <div className="container mx-auto px-4 relative z-10">
-      {title ? <div className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-12 dark:text-white text-black">
+      {title ? 
+      <div className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-7 sm:mb-12 dark:text-white text-black">
        <span className='border-l-5 border-[#c40b0b] ps-4'>{title}</span> 
       </div>:""}
       

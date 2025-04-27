@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         /></a>
       </div>
       <div className="w-full md:w-1/2">
-        <h3 className="text-2xl font-semibold hover:underline dark:text-white text-black mb-2">
+        <h3 className="text-2xl font-semibold dark:hover:text-blue-100 hover:text-gray-800 dark:text-white text-black mb-2">
           <a href={link} target="_blank">{title}</a>
         </h3>
         <p className=" dark:text-gray-400 text-gray-600 leading-relaxed">

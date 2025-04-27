@@ -27,7 +27,7 @@
 
 export const education = [ 
   {
-    degree: "Bachelor of Science in Information Systems",
+  degree: "Bachelor of Science in Information Systems",
     university: "Silliman University - Graduated 2016",
   },
 ];
