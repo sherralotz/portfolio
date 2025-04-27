@@ -5,9 +5,10 @@ interface IntroductionProps {
     variant: 'black' | 'blue';
     background?: 'blank';
     title?: string;
+    id?: string;
 }
 
-const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, background, title }) => {
+const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, background, title, id }) => {
     const variantClasses = {
         black:
             "bg-gray-100 dark:bg-black/80", 
@@ -28,9 +29,9 @@ const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, back
        
       <div className="container mx-auto px-4 relative z-10">
       {title ? 
-      <div className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-7 sm:mb-12 dark:text-white text-black">
+      <div id={id ?? ""} className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-7 sm:mb-12 dark:text-white text-black">
        <span className='border-l-5 border-[#c40b0b] ps-4'>{title}</span> 
-      </div>:""}
+      </div>:<div id={id ?? ""}></div>}
       
         {children}
         </div>

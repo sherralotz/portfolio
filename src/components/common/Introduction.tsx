@@ -18,7 +18,7 @@ const Introduction: React.FC = () => {
         <section className="flex items-center justify-center min-h-screen py-16 bg-transparent relative">
             
             <DotsBackground/>
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+        <div className="container mx-auto top-[-2em] px-5 sm:px-20 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
             <div className="text-center md:text-left">
               
                 <motion.div

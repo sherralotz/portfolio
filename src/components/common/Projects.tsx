@@ -1,9 +1,27 @@
 import React from "react";
 import ProjectCard from "../ui/ProjectCard";
 import SearchMovies from "../../assets/movie-search.png";
-import { Code2, Cpu, ScrollText } from "lucide-react";
+import BookTracker from "../../assets/book-tracker.png"
+import { Code2, Cpu, ScrollText, Zap } from "lucide-react";
 
 const projects = [
+  {
+    title: "Book Tracker",
+    description: 
+    `Inspired by Letterboxd but for book lovers, this app provides a platform to manage your reading list and write your reviews. 
+    Leveraging the Google Books and Open Library APIs, it offers a robust search and book information experience. 
+    My favorite feature is that you can export your review so you can share it on social media.`,
+    imageUrl: BookTracker,
+    link: "https://sherralotz.github.io/booktracker/", 
+    skills: [
+      { skill: "React", logo: <Code2 className="w-4 h-4" /> },
+      { skill: "JavaScript", logo: <Cpu className="w-4 h-4" /> },
+      { skill: "HTML5", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "CSS", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "SCSS", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "Tailwind CSS", logo: <Zap className="w-4 h-4" /> }
+    ],
+  },
   {
     title: "Search Movies",
     description:
@@ -21,7 +39,7 @@ const projects = [
 ];
 const Projects: React.FC = () => {
   return (
-    <div id="projects"> 
+    <div > 
       <div className="space-y-16 px-2">
         {projects.map((project, index) => (
           <ProjectCard

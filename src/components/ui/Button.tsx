@@ -13,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
     className,
     children,
     ...props
+    
 }) => {
     const baseClasses = `inline-flex cursor-pointer items-center justify-center rounded-md font-medium dark:text-white text-black
     transition-colors focus:outline-none  disabled:opacity-50 disabled:pointer-events-none   hover:bg-accent hover:text-accent-foreground`;

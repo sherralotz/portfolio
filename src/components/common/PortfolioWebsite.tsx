@@ -24,27 +24,27 @@ const PortfolioWebsite = () => {
 
       {/* --- Section 2: Skills --- */}
 
-      <SectionContainer variant={"black"} title={'My Skills'}>
+      <SectionContainer variant={"black"} title={'My Skills'} id={'skills'}>
         <Skills/>
       </SectionContainer>
 
       {/* --- Section 3: Work Experience --- */}
-      <SectionContainer variant={"blue"} title={'Experience'}>
+      <SectionContainer variant={"blue"} background={'blank'} title={'Experience'} id={'experience'}>
       <WorkExperience/>
       </SectionContainer>
 
       {/* --- Section 4: Education --- */}
-      <SectionContainer variant={"black"} title={'Education'}>
+      <SectionContainer variant={"black"} title={'Education'} id={'education'}>
         <Education/>
       </SectionContainer>
 
       {/* --- Section 5: Projects --- */}
-      <SectionContainer variant={"blue"} title={'Projects'}>
+      <SectionContainer variant={"blue"} background={'blank'} title={'Projects'} id={'projects'}>
         <Projects/>
       </SectionContainer>
 
       {/* --- Section 6: Contact --- */}
-      <SectionContainer variant={"black"} background={'blank'} >
+      <SectionContainer variant={"black"}  id={'contact'}>
       <Contact/>
       </SectionContainer>
     </div>

@@ -3,9 +3,8 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div id="contact">
-      {" "}
-      <div className="flex flex-row justify-center gap-5 sm:gap-8">
+    <div> 
+      <div className="flex flex-row justify-center gap-2 sm:gap-8 text-xs sm:text-sm">
         <a
           href="http://linkedin.com/in/sherrapaltingca"
           target="_blank"

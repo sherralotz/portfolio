@@ -33,7 +33,7 @@ interface Skill {
 const Skills: React.FC = () => {
   return (
     <>
-    <div  id="skills">
+    <div >
       {/* <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12 text-white">
         My Skills
       </h2> */}

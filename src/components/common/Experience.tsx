@@ -4,7 +4,7 @@ import { workExperience } from "../../data/content";
 
 const Experience: React.FC = () => {
   return (
-    <div id="experience">
+    <div>
       {/* <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12 text-white">
         Experience
       </h2> */}
