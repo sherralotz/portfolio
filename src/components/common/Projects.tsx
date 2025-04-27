@@ -9,6 +9,7 @@ const projects = [
     description:
       "This web application is a basic implementation of a movie search engine, created to practice React development skills. By connecting to the TMDb API, users can query for movies, and the application dynamically renders the retrieved information. The project likely involved working with React components, managing API responses, and presenting data in a user-friendly format.",
     imageUrl: SearchMovies,
+    link: "https://sherralotz.github.io/search-movies/", 
     skills: [
       { skill: "React", logo: <Code2 className="w-4 h-4" /> },
       { skill: "JavaScript", logo: <Cpu className="w-4 h-4" /> },
@@ -25,10 +26,7 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
-            title={project.title}
-            description={project.description}
-            imageUrl={project.imageUrl}
-            skills={project.skills}
+            {...project}
           />
         ))}
       </div>
