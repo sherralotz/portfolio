@@ -1,0 +1,40 @@
+
+import React, { ReactNode } from 'react';
+interface IntroductionProps { 
+    children?: ReactNode;
+    variant: 'black' | 'blue';
+    background?: 'blank';
+    title?: string;
+}
+
+const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, background, title }) => {
+    const variantClasses = {
+        black:
+            "bg-gray-100 dark:bg-black/80", 
+        blue:
+            "bg-gray-50 dark:bg-gray-900", 
+    };
+  
+
+
+    return (
+      <section className={`py-16 transition-colors duration-500 relative ${variantClasses[variant]}`}>  
+      {/* Dots Background */}
+      { background !== "blank" ? 
+        <div className={`absolute inset-0 transition-colors duration-500 
+          bg-[radial-gradient(#000_1px,_transparent_1px)] bg-[size:16px_16px] opacity-10
+          dark:bg-[radial-gradient(#e5e7eb_1px,_transparent_1px)] dark:bg-[size:16px_16px] dark:opacity-8
+        `} />:""}
+       
+      <div className="container mx-auto px-4 relative z-10">
+      {title ? <div className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-12 dark:text-white text-black">
+       <span className='border-l-5 border-[#c40b0b] ps-4'>{title}</span> 
+      </div>:""}
+      
+        {children}
+        </div>
+      </section>
+    );
+  };
+  
+  export default SectionContainer;
