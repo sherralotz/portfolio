@@ -8,8 +8,7 @@ import {
     ScrollText,
   } from "lucide-react";
   
- const skills = [
-
+ const skills = [ 
     { skill: "React", logo: <Code2 className="w-4 h-4" /> },
     { skill: "Angular", logo: <Code2 className="w-4 h-4" /> },
     { skill: "Next.js", logo: <Code2 className="w-4 h-4" /> },

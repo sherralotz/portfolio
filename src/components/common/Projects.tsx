@@ -1,34 +1,26 @@
 import React from "react";
 import ProjectCard from "../ui/ProjectCard";
+import SearchMovies from "../../assets/movie-search.png";
+import { Code2, Cpu, ScrollText } from "lucide-react";
 
-const projectPlaceholder =
-  "https://placehold.co/600x400?text=Project+Image&font=Montserrat";
 const projects = [
   {
-    title: "E-commerce Website",
+    title: "Search Movies",
     description:
-      "A full-stack e-commerce website with user authentication, product browsing, shopping cart, and checkout functionality.",
-    imageUrl: projectPlaceholder,
-  },
-  {
-    title: "Data Visualization Dashboard",
-    description:
-      "A dashboard that displays data from various sources using interactive charts and graphs.  Built with React and a charting library.",
-    imageUrl: projectPlaceholder,
-  },
-  {
-    title: "Mobile Task Manager",
-    description:
-      "A mobile app for managing tasks and to-do lists, with features like reminders, categories, and progress tracking. Built with React Native.",
-    imageUrl: projectPlaceholder,
+      "This web application is a basic implementation of a movie search engine, created to practice React development skills. By connecting to the TMDb API, users can query for movies, and the application dynamically renders the retrieved information. The project likely involved working with React components, managing API responses, and presenting data in a user-friendly format.",
+    imageUrl: SearchMovies,
+    skills: [
+      { skill: "React", logo: <Code2 className="w-4 h-4" /> },
+      { skill: "JavaScript", logo: <Cpu className="w-4 h-4" /> },
+      { skill: "HTML5", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "CSS", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "SCSS", logo: <ScrollText className="w-4 h-4" /> },
+    ],
   },
 ];
 const Projects: React.FC = () => {
   return (
-    <div id="projects">
-      {/* <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12 text-white">
-        Projects
-      </h2> */}
+    <div id="projects"> 
       <div className="space-y-16 px-2">
         {projects.map((project, index) => (
           <ProjectCard
@@ -36,6 +28,7 @@ const Projects: React.FC = () => {
             title={project.title}
             description={project.description}
             imageUrl={project.imageUrl}
+            skills={project.skills}
           />
         ))}
       </div>

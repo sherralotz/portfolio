@@ -5,7 +5,7 @@ import SectionContainer from "../ui/SectionContainer";
 import Skills from "./Skills";
 import WorkExperience from "./Experience";
 import Education from "./Education";
-// import Projects from "./Projects";
+import Projects from "./Projects";
 import Contact from "./Contact";
 import Header from "./Header";
  
@@ -39,9 +39,9 @@ const PortfolioWebsite = () => {
       </SectionContainer>
 
       {/* --- Section 5: Projects --- */}
-      {/* <SectionContainer variant={"blue"} title={'Projects'}>
+      <SectionContainer variant={"blue"} title={'Projects'}>
         <Projects/>
-      </SectionContainer> */}
+      </SectionContainer>
 
       {/* --- Section 6: Contact --- */}
       <SectionContainer variant={"black"} background={'blank'} >
