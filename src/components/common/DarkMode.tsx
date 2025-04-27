@@ -19,7 +19,7 @@ const DarkMode = () => {
       <Button
         variant="ghost"
         onClick={toggleDarkMode}
-        className={"rounded-full p-2 "}
+        className={"rounded-full p-2 z-20"}
       >
         {isDarkMode ? (
           <div className=" inline-flex">

@@ -47,7 +47,7 @@ const Introduction: React.FC = () => {
                         size="lg"
                         className="transition-all duration-300"
                     >
-                        <a href="mailto:sherralotz@email.com">Hire Me</a>
+                        <a href="mailto:sherrajayetuble@gmail.com">Hire Me</a>
                         
                     </Button>
                     

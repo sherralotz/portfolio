@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         y: 0,
         transition: { duration: 0.5 },
       }}
-      className="flex flex-col md:flex-row items-center gap-8"
+      className="flex flex-col md:flex-row items-center gap-8 lg:mx-30 xl:mx-20"
     >
       <div className="w-full md:w-1/2">
       <a href={link} target="_blank">

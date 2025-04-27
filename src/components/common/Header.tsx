@@ -21,10 +21,9 @@ const Header: React.FC = () => {
     const targetElement = document.querySelector(link); // Find the section by id
 
     if (targetElement) {
-      const topOffset = 50;
-      const targetPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY - topOffset;
-
+      const initial =  (targetElement.getBoundingClientRect().top + window.scrollY);
+      const targetPosition = link==="#contact" ? initial + 20 : initial - 50; 
+      console.log('test', targetPosition)
       window.scrollTo({
         top: targetPosition,
         behavior: "smooth",
@@ -35,17 +34,16 @@ const Header: React.FC = () => {
   return (
     <div className="transition-colors duration-500 relative items-center">
       <DotsBackground />
-      <div className="pt-6.5 ps-5 sm:ps-10 relative z-30 lg:text-lg">
+      <div className="pt-6.5 ps-5 sm:ps-10 relative lg:text-lg">
         {/* Hamburger Menu Icon (on small screens) */}
         <div className="sm:hidden flex items-center justify-between mt-2">
           <Button 
             variant="ghost"
             size="custom"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-white z-20"
+            className="z-30"
           >
-            {isMenuOpen ? <X /> : <Menu />}{" "}
-            {/* Use X for close, Menu for hamburger */}
+            {isMenuOpen ? <X /> : <Menu />}{" "} 
           </Button>
         </div>
 
@@ -59,7 +57,7 @@ const Header: React.FC = () => {
               onClick={(e) => handleScroll(e, item.link)}
               variant="ghost"
               size="custom"
-              className="px-2 py-2 sm:px-6 sm:py-3 text-white"
+              className="px-2 py-2 sm:px-6 sm:py-3 text-black dark:text-white"
             >
               {item.label}
             </Button>
