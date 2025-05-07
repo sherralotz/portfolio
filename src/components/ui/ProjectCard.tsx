@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         y: 0,
         transition: { duration: 0.5 },
       }}
-      className="flex flex-col md:flex-row items-center gap-8 lg:mx-30 xl:mx-20"
+      className="flex flex-col md:flex-row items-center gap-8 lg:mx-30 xl:mx-20 "
     >
       <div className="w-full md:w-1/2">
       <a href={link} target="_blank">
@@ -50,6 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-2xl font-semibold dark:hover:text-blue-100 hover:text-gray-800 dark:text-white text-black mb-2">
           <a href={link} target="_blank">{title}</a>
         </h3>
+        <div>
         <p className=" dark:text-gray-400 text-gray-600 leading-relaxed">
           {description}
         </p>
@@ -57,6 +58,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {skills.map((skill: Skill, index) => (
             <SkillPill key={index} skill={skill.skill} logo={skill.logo} />
           ))}
+        </div>
+
         </div>
       </div>
     </motion.div>

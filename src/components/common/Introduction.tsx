@@ -36,6 +36,7 @@ const Introduction: React.FC = () => {
                 >
                    <TypingAnimation texts={ROLE_LIST} /> 
                 </motion.div>
+                
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}

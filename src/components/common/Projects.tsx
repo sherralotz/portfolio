@@ -1,10 +1,26 @@
 import React from "react";
 import ProjectCard from "../ui/ProjectCard";
 import SearchMovies from "../../assets/movie-search.png";
+import TravelPlanner from "../../assets/travel-planner.png";
 import BookTracker from "../../assets/book-tracker.png"
 import { Code2, Cpu, ScrollText, Zap } from "lucide-react";
 
 const projects = [
+  {
+    title: "Travel Planner",
+    description: 
+    `This project emerged from my own need to simplify travel planning, which typically involved a combination of Sheets and Notes. 
+    Using Vue.js, I created a dedicated application to manage all trip details in one place, serving as a practical exercise in the framework.`,
+    imageUrl: TravelPlanner,
+    link: "https://sherralotz.github.io/travel-planner/", 
+    skills: [
+      { skill: "Vue.js", logo: <Code2 className="w-4 h-4" /> },
+      { skill: "JavaScript", logo: <Cpu className="w-4 h-4" /> },
+      { skill: "HTML5", logo: <ScrollText className="w-4 h-4" /> },
+      { skill: "CSS", logo: <ScrollText className="w-4 h-4" /> }, 
+      { skill: "Tailwind CSS", logo: <Zap className="w-4 h-4" /> }
+    ],
+  },
   {
     title: "Book Tracker",
     description: 

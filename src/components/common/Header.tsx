@@ -67,7 +67,7 @@ const Header: React.FC = () => {
 
       {/* Vertical Menu on Small Screens (visible when isMenuOpen is true) */}
       <div
-        className={`sm:hidden absolute top-0 left-0 w-full bg-black text-white p-4 space-y-4 z-20 ${
+        className={`sm:hidden absolute top-0 left-0 w-full dark:bg-black dark:text-white bg-white text-black p-4 space-y-4 z-20 ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
