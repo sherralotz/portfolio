@@ -9,25 +9,25 @@ const Contact: React.FC = () => {
           href="http://linkedin.com/in/sherrapaltingca"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center dark:text-white text-black hover:text-blue-300 transition-colors duration-300"
+          className="inline-flex items-center text-white hover:text-blue-300 transition-colors duration-300"
         >
           <Linkedin className="w-6 h-6 mr-2" />
           LinkedIn
         </a>
-        <span className="dark:text-white text-black">|</span>
+        <span className="text-white">|</span>
         <a
           href="mailto:sherrajayetuble@gmail.com"
-          className="inline-flex items-center dark:text-white text-black hover:text-blue-300 transition-colors duration-300"
+          className="inline-flex items-center text-white hover:text-blue-300 transition-colors duration-300"
         >
           <Mail className="w-6 h-6 mr-2" />
           Email
         </a>
-        <span className="dark:text-white text-black">|</span>
+        <span className="text-white">|</span>
         <a
           href="https://github.com/sherralotz"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center dark:text-white text-black hover:text-blue-300 transition-colors duration-300"
+          className="inline-flex items-center text-white hover:text-blue-300 transition-colors duration-300"
         >
           <Github className="w-6 h-6 mr-2" />
           Github

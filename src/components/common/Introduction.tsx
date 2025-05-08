@@ -18,14 +18,13 @@ const Introduction: React.FC = () => {
         <section className="flex items-center justify-center min-h-screen py-16 bg-transparent relative">
             
             <DotsBackground/>
-        <div className="container mx-auto top-[-2em] px-5 sm:px-20 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
-            <div className="text-center md:text-left">
-              
+        <div className="container mx-auto top-[-2em] px-5 sm:px-20 md:px-10 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+            <div className="text-center md:text-left flex flex-col grow md:ms-24"> 
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="accent-font text-5xl sm:text-7xl md:text-8xl dark:text-white text-black">
+                    className="accent-font text-5xl sm:text-6xl md:text-8xl dark:text-white text-black grow">
                    <span className='pl-4 border-l-7 border-[#c40b0b]'>I&apos;m Sherra</span> 
                 </motion.div>
                 <motion.div
@@ -58,7 +57,7 @@ const Introduction: React.FC = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="w-full md:w-1/2"
+                className="w-auto md:me-20 sm:min-w-60"
             >
                 <Lottie
                     animationData={codingSherra}

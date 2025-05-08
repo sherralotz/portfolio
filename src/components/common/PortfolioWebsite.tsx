@@ -44,7 +44,7 @@ const PortfolioWebsite = () => {
       </SectionContainer>
 
       {/* --- Section 6: Contact --- */}
-      <SectionContainer variant={"black"}  id={'contact'}>
+      <SectionContainer variant={"red"}  id={'contact'}>
       <Contact/>
       </SectionContainer>
     </div>

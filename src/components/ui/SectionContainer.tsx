@@ -2,7 +2,7 @@
 import React, { ReactNode } from 'react';
 interface IntroductionProps { 
     children?: ReactNode;
-    variant: 'black' | 'blue';
+    variant: 'black' | 'blue' | 'red';
     background?: 'blank';
     title?: string;
     id?: string;
@@ -14,6 +14,8 @@ const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, back
             "bg-gray-100 dark:bg-black/80", 
         blue:
             "bg-gray-50 dark:bg-gray-900", 
+        red:
+            "bg-red-800 dark:bg-black/80", 
     };
   
 
@@ -31,8 +33,7 @@ const SectionContainer: React.FC<IntroductionProps> = ({ children, variant, back
       {title ? 
       <div id={id ?? ""} className="text-3xl accent-font sm:text-4xl font-semibold text-center mb-7 sm:mb-12 dark:text-white text-black">
        <span className='border-l-5 border-[#c40b0b] ps-4'>{title}</span> 
-      </div>:<div id={id ?? ""}></div>}
-      
+      </div>:<div id={id ?? ""}></div>} 
         {children}
         </div>
       </section>
