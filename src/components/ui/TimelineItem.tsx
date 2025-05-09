@@ -49,7 +49,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         <h3 className={`text-lg font-semibold text-left sm:text-right `}>
           {title}
         </h3>
-        <p className="text-xsdark:text-gray-400 text-gray-600 mb-2 text-left sm:text-right">
+        <p className="text-xs dark:text-gray-400 text-gray-600 mb-2 text-left sm:text-right">
           {subtitle}
         </p>
         <ul className="list-disc pl-5 space-y-1">
