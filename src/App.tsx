@@ -1,10 +1,10 @@
-import "./App.css";
+import "./App.css";  
 import PortfolioWebsite from "./components/common/PortfolioWebsite"; 
 
 function App() {
   return (
-    <>
-    <PortfolioWebsite/>
+    <> 
+    <PortfolioWebsite/> 
     </>
   );
 }

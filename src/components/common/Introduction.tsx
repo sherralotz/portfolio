@@ -11,9 +11,12 @@ const ROLE_LIST=[
     "UI Developer",
     "Web Developer"
 ]
- 
+ const DESCRIPTION = ` 
+    Based in New Jersey, I've got a 9-year track record of building web apps that feel effortless and intuitive to use.           
+ `;
 
 const Introduction: React.FC = () => {
+
     return (
         <section className="flex items-center justify-center min-h-screen py-16 bg-transparent relative">
             
@@ -27,6 +30,7 @@ const Introduction: React.FC = () => {
                     className="accent-font text-5xl sm:text-6xl md:text-8xl dark:text-white text-black grow">
                    <span className='pl-4 border-l-7 border-[#c40b0b]'>I&apos;m Sherra</span> 
                 </motion.div>
+               
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -35,12 +39,21 @@ const Introduction: React.FC = () => {
                 >
                    <TypingAnimation texts={ROLE_LIST} /> 
                 </motion.div>
+ 
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="mt-4 min-w-72 sm:w-md text-sm sm:text-[15px] font-sans dark:text-gray-300 text-black">
+                   <span className=''>{DESCRIPTION}</span> 
+                </motion.div>
+
                 
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="mt-8"
+                    className="mt-5"
                 >
                     <Button
                         variant="red"

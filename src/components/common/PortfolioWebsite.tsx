@@ -7,11 +7,12 @@ import WorkExperience from "./Experience";
 import Education from "./Education";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Header from "./Header";
+import Header from "./Header"; 
  
 const PortfolioWebsite = () => { 
   return (
-    <div className="min-h-screen dark:bg-[#0f0f0f] bg-white text-gray-100 font-sans transition-colors duration-500 w-full">
+    <div className="min-h-screen bg-white/80 dark:bg-[#0f0f0f]/80 text-gray-100 font-sans transition-colors duration-500 w-full">
+ 
      <Header/>
       
       {/* Dark Mode Toggle */}
