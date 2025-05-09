@@ -25,7 +25,9 @@ const SkillPill: React.FC<SkillPillProps> = ({ skill, logo }) => {
         },
       }}
       className={
-        "inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-white/10 dark:text-white text-black text-sm font-medium\n                       backdrop-blur-md shadow-md mr-2 mb-2 transition-all duration-300\n                       hover:bg-white/20 hover:scale-105 border border-white/10"
+        `inline-flex items-center px-3 sm:px-4 py-2 rounded-full bg-white dark:bg-white/10 dark:text-white text-black 
+        sm:text-sm text-xs font-medium backdrop-blur-md shadow-md mr-2 mb-2 transition-all duration-300 hover:bg-white/20 hover:scale-105 
+        border border-white/10`
       }
     >
       {logo}

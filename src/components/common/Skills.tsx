@@ -6,6 +6,9 @@ import {
     Code2,
     Zap,
     ScrollText,
+    Database,
+    Pencil, 
+    LayoutGrid,
   } from "lucide-react";
   
  const skills = [ 
@@ -23,6 +26,10 @@ import {
     { skill: "SCSS", logo: <ScrollText className="w-4 h-4" /> },
     { skill: "Tailwind CSS", logo: <Zap className="w-4 h-4" /> },
     { skill: "Bootstrap", logo: <Zap className="w-4 h-4" /> },
+    { skill: "Firebase", logo: <Database className="w-4 h-4" /> },
+ 
+    { skill: "Design", logo: <Pencil className="w-4 h-4" /> },
+    { skill: "Figma", logo: <LayoutGrid className="w-4 h-4" /> },
   ];
 
 interface Skill {
@@ -37,7 +44,7 @@ const Skills: React.FC = () => {
       {/* <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12 text-white">
         My Skills
       </h2> */}
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center mx-2 sm:mx-12 md:mx-32">
         {skills.map((skill: Skill, index) => (
           <SkillPill key={index} skill={skill.skill} logo={skill.logo} />
         ))}
